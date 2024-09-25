@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Image and text -->
+    <!--Funawesome CDN-->
+    <script src="https://kit.fontawesome.com/2c43223b58.js" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+        <img class="mr-3" src="./media/IMG-KSP.jpg" alt="Generic placeholder image" width="50" height="30">
+        <div class="text-center">
+            <a class="navbar-brand" href="{% url 'homepage' %}">KROME Sports Performance</a>
+
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'about' %}">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Programs
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'flexmob' %}">Mobility & Flexibility</a>
+                    <a class="dropdown-item" href="{% url 'conditioning' %}">Conditoning Speed & Agility</a>
+                    <a class="dropdown-item" href="{% url 'power' %}">Strength & Power</a>
+                </div>
+            </li>
+            <a class="nav-link" href="#">Membership</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+            </li>
+
+        </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-dark" href="#">KSP-TV<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Members</a>
+                </li>
+    </nav>
+    <title>About</title>
+</head>
+
+<body>
+    <div class=" contatiner mr-2 p-2">
+        <div class="row justify-content-center">
+            <div class="text-center">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img class="d-block mx-auto" src="{% static './media/work.jpg' %}" alt="My image"
+                                width="400" height="500">
+                        </div>
+                        <div class="carousel-item active">
+                            <img class="d-block mx-auto" src="./media/letsgo.jpg" alt="First slide" href="#" width="500"
+                                height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block mx-auto" src="./media/pullups.jpg" alt="Third slide" width="500"
+                                height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block mx-auto" src="./media/chris.JPG" alt="Fourth slide" width="500"
+                                height="500">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-dark text-center text-white mr-6 m-6 p-2">
+
+        <h1 class="text-warning">Christopher Brown</h1>
+        <h7> NSCA-CSCS, USAW-L1, EXOS-XPS, EXOS-XFS</h7>
+        <h5 class="text-warning">OWNER / CEO / COACH</h5>
+        <p class="text-center mr-2">Coach Brown graduated from Midwest City High School where he was an
+            All-District utility baseball
+            player.
+            Graduating in 2002, he recieved a baseball scholarship to Rose State College where he played
+            2 years as the starting centerfielder for the Raiders. Once graduating from RSC, Brown accepted
+            a scholarship to play at Saint Gregory's University in Shawnee, Oklahoma earning a Gold Glove
+            Award
+            and a 2nd Team All Conference in the Sooner Athletic Conference.
+        </p>
+    </div>
+
+    <div class=" contatiner p-2">
+        <div class="row justify-content-center">
+            <ul class="list-group">
+                <h2>
+                    <center>Education</center>
+                </h2>
+
+                <li class="list-group-item text-warning border-warning">
+                    <h7>A.S Personal Training & Fitness Management-Rose State College</h7>
+                </li>
+                <li class="list-group-item text-warning border-warning">
+                    <h7>B.S Business Management-Saint Gregory's University</h7>
+                </li>
+                <li class="list-group-item text-warning border-warning">
+                    <h7>M.A Teaching and Leadership-Southern Nazerene University</h7>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class=" contatiner bg-dark mr-2 p-2">
+        <div class="row justify-content-center">
+
+            <ul>
+                <h2 class="text-warning">
+                    <center>Experience</center>
+                </h2>
+
+                <li class="list-group-item bg-dark border-warning">
+                    <h7 class="text-white">Head Strength & Conditioning / Asst. Baseball Coach-Shawnee High
+                        School (2022-present)</h7>
+                </li>
+                <li class="list-group-item bg-dark border-warning">
+                    <h7 class="text-white">Owner / Trainer - KROME SPORTS PERFORMANCE (2018-Present)</h7>
+                </li>
+                <li class="list-group-item bg-dark border-warning">
+                    <h7 class="text-white">Strength & Conditioning / Asst. Baseball Coach - Rose State College
+                        (2017-2021)</h7>
+                </li>
+                <li class="list-group-item bg-dark border-warning">
+                    <h7 class="text-white">Health Fitness Specialist / Sports Performance Coach - EXOS (2016-2018)
+                    </h7>
+                </li>
+                <li class="list-group-item bg-dark border-warning">
+                    <h7 class="text-white">Owner / Personal Trainer - Money Train Athletics (2013-2016)</h7>
+                </li>
+                <li class="list-group-item bg-dark border-warning">
+                    <h7 class="text-white">Sales Manager / Personal Trainer - Body Fit Club (2010-2013)</h7>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
